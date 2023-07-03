@@ -10,7 +10,7 @@ spec:
       paths:
         - local-modules/kustomize-bases/helloworld/*
   input:
-    helmVersion: ducameme
+    helmVersion: ducameme1
     kustomizeVersion: 3.5.5
   description: |
     This app demonstrates how to deploy a Kubernetes app that uses a Kustomize package sourced from the same Git repository.\
