@@ -1,18 +1,28 @@
 
-helmGlobals:
- chartHome: ../../local-modules/helm-charts/helloworld
+# helmGlobals:
+#  chartHome: ../../local-modules/helm-charts/helloworld
+
+# helmCharts:
+#   - valuesInline:
+#       replicaCount: 1
+#       image:
+#         repository: gcr.io/pipecd/helloworld
+#         tag: v0.5.0
+#       fullnameOverride: helm-local-chart
+#       service:
+#         port: 9085
+#     name: helloworld
+# # bases:
+# # - ../../local-modules/kustomize-bases/helloworld
+
+# nameSuffix: -helm-anhpnv
 
 helmCharts:
-  - valuesInline:
-      replicaCount: 1
-      image:
-        repository: gcr.io/pipecd/helloworld
-        tag: v0.5.0
-      fullnameOverride: helm-local-chart
-      service:
-        port: 9085
-    name: helloworld
-# bases:
-# - ../../local-modules/kustomize-bases/helloworld
-
-nameSuffix: -helm-anhpnv
+- name: kube-prometheus-stack
+  repo: https://prometheus-community.github.io/helm-charts
+  version: 43.2.1
+  releaseName: prom-operator
+  namespace: default
+  valuesInline:
+    commonLabels:
+      sample: "values"
