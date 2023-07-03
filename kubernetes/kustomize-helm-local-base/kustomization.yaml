@@ -11,6 +11,7 @@ helmCharts:
       fullnameOverride: helm-local-chart
       service:
         port: 9085
+    name: helloworld
 # bases:
 # - ../../local-modules/kustomize-bases/helloworld
 
