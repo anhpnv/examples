@@ -1,7 +1,7 @@
 apiVersion: pipecd.dev/v1beta1
 kind: KubernetesApp
 spec:
-  name: kustomize-local-base
+  name: kustomize-helm-local-base
   labels:
     env: example
     team: product
