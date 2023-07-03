@@ -13,9 +13,8 @@ spec:
     helmVersion: 3.10.1
     kustomizeVersion: 3.5.5
     kustomizeOptions:
-     - enable-helm
-     - helm-command
-     - /tmp/piped-bin/helm-3.10.1 .
+     enable-helm: ""
+     helm-command: "/tmp/piped-bin/helm-3.10.1 ."
 
   description: |
     This dumeme demonstrates how to deploy a Kubernetes app that uses a Kustomize package sourced from the same Git repository.\
