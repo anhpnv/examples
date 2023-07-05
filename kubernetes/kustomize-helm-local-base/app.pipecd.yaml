@@ -10,8 +10,8 @@ spec:
       paths:
         - local-modules/kustomize-bases/helloworld/*
   input:
-    helmVersion: 3.8.2
-    kustomizeVersion: 5.88.7
+    helmVersion: 3.9.99
+    kustomizeVersion: 3.5.5
     kustomizeOptions:
      enable-helm: ""
      helm-command: "/tmp/piped-bin/helm-3.10.1"
