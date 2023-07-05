@@ -10,7 +10,7 @@ spec:
       paths:
         - local-modules/kustomize-bases/helloworld/*
   input:
-    helmVersion: 3.27.9
+    helmVersion: 3.8.2
     kustomizeVersion: 5.88.7
     kustomizeOptions:
      enable-helm: ""
