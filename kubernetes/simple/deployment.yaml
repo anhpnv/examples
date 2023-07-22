@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: ghcr.io/pipe-cd/helloworld:v0.32.0
+        image: ductn4/dummy:a8e1a25
         args:
           - server
         ports:
